@@ -1,0 +1,22 @@
+.header__container {
+    margin-left: 160px;
+    margin-top: 33px;
+    display: flex;
+    column-gap: 400px;
+
+    &-nav {
+        margin-left: 40px;
+
+        &-ul {
+            display: flex;
+            list-style: none;
+            column-gap: 56px;
+
+            a {
+                text-decoration: none;
+                font-size: 18px;
+                color: $black;
+            }
+        }
+    }
+}
