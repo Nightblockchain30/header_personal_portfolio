@@ -25,16 +25,28 @@
   font-size: 18px;
   color: #333333;
 }
+.header__container-nav-ul a:hover {
+  color: #DC0155;
+  transform: scale(1.3);
+  font-weight: 400;
+}
+.header__container-nav-ul a:active {
+  color: #333333;
+  text-decoration: underline;
+  text-decoration-color: #333333;
+  text-decoration-thickness: 2px;
+}
 
 body {
-  background-image: url("../img/background-blur.png");
-  background-size: cover;
+  background-image: url(../img/background-blur.png);
+  background-size: 2009px;
   background-repeat: no-repeat;
+  background-position: -45px 0px;
 }
 
 .main__container {
   margin-left: 160px;
-  margin-top: 60px;
+  margin-top: 110px;
 }
 .main__container-p-first {
   font-size: 24px;
@@ -44,7 +56,7 @@ body {
   font-size: 120px;
   margin-bottom: 16px;
   font-family: "Bebas Neue", sans-serif;
-  max-width: 50%;
+  max-width: 80%;
   text-transform: uppercase;
   color: #333333;
   line-height: 120px;
@@ -57,7 +69,7 @@ body {
 }
 .main__container-p-second {
   color: #333333;
-  font-size: 18px;
+  font-size: 24px;
   margin-bottom: 48px;
 }
 .main__container-button {
@@ -66,6 +78,14 @@ body {
   border-radius: 32px;
   text-decoration: none;
   color: white;
+}
+.main__container-button:hover {
+  background-color: #333333;
+  transform: scale(1.3);
+  font-weight: 600;
+}
+.main__container-button:active {
+  background-color: #DC0155;
 }
 .main__container-h2 {
   margin-top: 121px;
@@ -78,19 +98,119 @@ body {
 }
 .main__container-section {
   display: flex;
-  column-gap: 32px;
+  column-gap: 160px;
   margin-bottom: 55px;
 }
 .main__container-section-div {
   max-width: 20%;
+}
+.main__container-section-div img:hover {
+  transform: scale(1.2);
 }
 .main__container-section-div h3 {
   margin-top: 24px;
   font-size: 24px;
 }
 .main__container-section-div p {
-  max-width: 70%;
+  min-width: 300px;
   color: #909090;
   margin-top: 8px;
   font-size: 18px;
+  padding-right: 70px;
+}
+.main__container__hero-img-back {
+  background-size: 100px;
+  margin-top: 82px;
+  position: absolute;
+  right: 310px;
+  top: 100px;
+}
+.main__container__hero-ornament-right {
+  position: absolute;
+  top: 147px;
+  right: 227px;
+  z-index: 1;
+}
+.main__container__hero-ornament-right:hover {
+  transform: scale(1.1);
+}
+.main__container__hero-ornament-left {
+  position: absolute;
+  top: 475px;
+  right: 827px;
+  z-index: 1;
+  rotate: 90deg;
+}
+.main__container__hero-ornament-left:hover {
+  transform: scale(1.1);
+}
+.main__container__hero-img-front {
+  position: absolute;
+  top: 120px;
+  right: 220px;
+}
+.main__container__hero-div {
+  background-color: white;
+  box-shadow: -7px 14px 30px 0px rgba(97, 97, 97, 0.75);
+  -webkit-box-shadow: -7px 14px 30px 0px rgba(97, 97, 97, 0.75);
+  -moz-box-shadow: -7px 14px 30px 0px rgba(97, 97, 97, 0.75);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  padding: 24px;
+  border-radius: 24px;
+}
+.main__container__hero-div:hover {
+  border: 2px solid #DC0155;
+  cursor: pointer;
+}
+.main__container__hero-div-description :nth-child(1) {
+  color: #333333;
+  font-size: 24px;
+  font-weight: 600;
+}
+.main__container__hero-div-description :nth-child(2) {
+  color: #909090;
+  font-size: 18px;
+}
+.main__container__hero .div1 {
+  margin-top: 700px;
+  max-width: 25%;
+  position: absolute;
+  top: -470px;
+  right: 750px;
+}
+.main__container__hero .div1 .main__container__hero-div-img {
+  background-color: #DC0155;
+  border-radius: 24px;
+  padding: 16px;
+}
+.main__container__hero .div1 .main__container__hero-div-img img {
+  background-size: contain;
+}
+.main__container__hero .div2 {
+  max-width: 25%;
+  position: absolute;
+  top: 322px;
+  right: 114px;
+}
+.main__container__hero .div3 {
+  max-width: 44%;
+  position: absolute;
+  top: 644px;
+  right: 208px;
+}
+.main__container__hero .div3 .main__container__hero-div-img {
+  background-color: #DC0155;
+  border-radius: 24px;
+  padding: 16px;
+}
+.main__container__hero .div3 .main__container__hero-div-img img {
+  background-size: contain;
+}
+
+.main__grid {
+  display: grid;
+  grid-template-columns: 60% 40%;
 }/*# sourceMappingURL=style.css.map */
