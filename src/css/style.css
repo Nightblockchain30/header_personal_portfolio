@@ -78,11 +78,11 @@ body {
   border-radius: 32px;
   text-decoration: none;
   color: white;
+  transition-duration: 0.5s;
+  transition-property: background-color;
 }
 .main__container-button:hover {
   background-color: #333333;
-  transform: scale(1.3);
-  font-weight: 600;
 }
 .main__container-button:active {
   background-color: #DC0155;
@@ -103,9 +103,11 @@ body {
 }
 .main__container-section-div {
   max-width: 20%;
+  transition-property: all;
+  transition-duration: 2s;
 }
 .main__container-section-div img:hover {
-  transform: scale(1.2);
+  transform: rotate(-5deg) scale(1.2);
 }
 .main__container-section-div h3 {
   margin-top: 24px;
@@ -132,7 +134,7 @@ body {
   z-index: 1;
 }
 .main__container__hero-ornament-right:hover {
-  transform: scale(1.1);
+  transform: scale(1.1) rotate(3deg);
 }
 .main__container__hero-ornament-left {
   position: absolute;
@@ -142,12 +144,15 @@ body {
   rotate: 90deg;
 }
 .main__container__hero-ornament-left:hover {
-  transform: scale(1.1);
+  transform: scale(1.1) rotate(-3deg);
 }
 .main__container__hero-img-front {
   position: absolute;
   top: 120px;
   right: 220px;
+}
+.main__container__hero-img-front:hover {
+  transform: translate(0, -5px);
 }
 .main__container__hero-div {
   background-color: white;
